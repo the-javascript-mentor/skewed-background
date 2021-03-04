@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skew example</title>
+    <style>
+      body {
+        margin-top: 1000px;
+        margin-bottom: 1000px;
+      }
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .skewed-container {
+        background-color: lightcoral;
+        position: relative;
+      }
+      .skewed-container .top-shape {
+        height: 300px;
+        background-color: lightblue;
+        transform: skew(0, -8deg) translateY(-28%);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+      }
+      .skewed-container .bottom-shape {
+        height: 300px;
+        background-color: lightgreen;
+        transform: skew(0, -8deg) translateY(28%);
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: -1;
+      }
+      .skewed-container-content {
+        padding: 50px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="skewed-container">
+        <div class="top-shape"></div>
+        <div class="skewed-container-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            reprehenderit est autem cumque molestiae numquam voluptatibus
+            sapiente voluptates alias magni animi aperiam laborum magnam
+            repudiandae necessitatibus ad quas consequuntur quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            reprehenderit est autem cumque molestiae numquam voluptatibus
+            sapiente voluptates alias magni animi aperiam laborum magnam
+            repudiandae necessitatibus ad quas consequuntur quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            reprehenderit est autem cumque molestiae numquam voluptatibus
+            sapiente voluptates alias magni animi aperiam laborum magnam
+            repudiandae necessitatibus ad quas consequuntur quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            reprehenderit est autem cumque molestiae numquam voluptatibus
+            sapiente voluptates alias magni animi aperiam laborum magnam
+            repudiandae necessitatibus ad quas consequuntur quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            reprehenderit est autem cumque molestiae numquam voluptatibus
+            sapiente voluptates alias magni animi aperiam laborum magnam
+            repudiandae necessitatibus ad quas consequuntur quidem.
+          </p>
+        </div>
+        <div class="bottom-shape"></div>
+      </div>
+    </main>
+  </body>
+</html>
